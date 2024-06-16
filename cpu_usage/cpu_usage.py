@@ -22,7 +22,7 @@ def write_report(processes, report_file):
             f.write(f"{pid} {name} {mem}\n")
 
 def alert():
-    print('\a')  # This is the bell character, which will produce a beep sound
+    print('\a')  # This is will produce a sound
 
 def main(threshold, interval):
     threshold_bytes = int(threshold[:-1]) * (1024 ** {'K': 1, 'M': 2, 'G': 3}[threshold[-1].upper()])
