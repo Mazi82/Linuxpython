@@ -1,9 +1,0 @@
-[Unit]
-Description=CPU Usage Monitoring Service
-
-[Service]
-ExecStart=/usr/bin/env python3 /path/to/cpu_usage.py 100M 5
-Restart=always
-
-[Install]
-WantedBy=multi-user.target
