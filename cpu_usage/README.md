@@ -15,12 +15,13 @@ sudo cp /path/to/cpu_usage.service /etc/systemd/system/cpu_usage.service
 
 
 
-#### Starta tjänsten
+#### Starta tjänsten: 
+```bash
 sudo systemctl daemon-reload
 sudo systemctl enable cpu_usage.service
 sudo systemctl start cpu_usage.service
 
-##### Stoppa tjänsten
+##### Stoppa tjänsten:
 sudo systemctl stop cpu_usage.service
 sudo systemctl disable cpu_usage.service
 
